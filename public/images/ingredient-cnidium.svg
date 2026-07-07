@@ -1,0 +1,15 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="56" fill="#F9F4E8"/>
+  <circle cx="680" cy="145" r="190" fill="#D7B56D" opacity=".35"/>
+  <circle cx="120" cy="500" r="230" fill="#274327" opacity=".10"/>
+  <path d="M454 500C450 392 446 298 432 168" stroke="#31522A" stroke-width="15" stroke-linecap="round"/>
+  <path d="M432 168C386 200 340 231 292 262" stroke="#31522A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M432 168C490 191 548 219 602 253" stroke="#31522A" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#F3D37B" stroke="#9A6B35" stroke-width="7">
+    <circle cx="420" cy="122" r="34"/><circle cx="370" cy="148" r="30"/><circle cx="474" cy="149" r="31"/><circle cx="322" cy="262" r="28"/><circle cx="270" cy="283" r="24"/><circle cx="590" cy="245" r="29"/><circle cx="638" cy="274" r="24"/>
+  </g>
+  <path d="M454 500C395 455 345 447 293 470C337 514 389 528 454 500Z" fill="#5D7A3A"/>
+  <path d="M454 500C509 451 562 438 626 458C590 508 532 528 454 500Z" fill="#6C8A42"/>
+  <text x="56" y="88" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#1F1A12">Cnidium Officinale</text>
+  <text x="56" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#8A6730">растительный компонент комплекса</text>
+</svg>
