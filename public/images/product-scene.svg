@@ -1,0 +1,33 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="70" fill="#FBF7EF"/>
+  <circle cx="1020" cy="145" r="250" fill="#D7B56D" opacity=".35"/>
+  <circle cx="115" cy="720" r="260" fill="#7A1F18" opacity=".09"/>
+  <rect x="96" y="560" width="1008" height="96" rx="48" fill="#E8D3A3" opacity=".55"/>
+  <g filter="url(#shadow)">
+    <rect x="170" y="185" width="315" height="420" rx="32" fill="#F7F1E5"/>
+    <rect x="197" y="213" width="261" height="364" rx="24" fill="url(#pack)"/>
+    <rect x="223" y="239" width="209" height="68" rx="18" fill="#382517"/>
+    <text x="327" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#E7C774">HemoHIM</text>
+    <path d="M253 353C295 315 344 325 370 363C405 326 453 335 466 376C486 443 405 494 359 538C306 494 222 421 253 353Z" fill="#7A1F18"/>
+    <rect x="236" y="514" width="182" height="40" rx="14" fill="#F5DEAA"/>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="545" y="405" width="356" height="102" rx="24" fill="#FFF8E8" transform="rotate(-7 545 405)"/>
+    <text x="718" y="461" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#7A1F18" transform="rotate(-7 718 461)">Daily Sachet</text>
+    <rect x="595" y="515" width="356" height="102" rx="24" fill="#FFF8E8" transform="rotate(8 595 515)"/>
+    <text x="772" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#7A1F18" transform="rotate(8 772 575)">Atomy HemoHIM</text>
+  </g>
+  <g opacity=".9">
+    <path d="M842 340C850 236 909 181 1011 167C1003 272 943 329 842 340Z" fill="#6F8F45"/>
+    <path d="M865 346C898 291 948 250 1008 218" stroke="#3D5A2A" stroke-width="9" stroke-linecap="round"/>
+    <path d="M789 325C752 242 768 178 842 122C882 212 863 277 789 325Z" fill="#5E7A38"/>
+    <path d="M795 313C803 250 820 201 842 154" stroke="#3D5A2A" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="84" y="103" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#1F1A12">Atomy HemoHIM</text>
+  <text x="84" y="148" font-family="Arial, sans-serif" font-size="23" font-weight="600" fill="#7B5C2A">продуктовый визуал для демонстрационной страницы</text>
+  <defs>
+    <filter id="shadow" x="118" y="145" width="420" height="520" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#2A1B10" flood-opacity=".18"/></filter>
+    <filter id="soft" x="500" y="360" width="500" height="280" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#7A4B21" flood-opacity=".14"/></filter>
+    <linearGradient id="pack" x1="197" y1="213" x2="458" y2="577" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF8E8"/><stop offset=".52" stop-color="#E3BC60"/><stop offset="1" stop-color="#7A1F18"/></linearGradient>
+  </defs>
+</svg>
