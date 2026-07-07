@@ -1,0 +1,16 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="56" fill="#FBF1EF"/>
+  <circle cx="725" cy="120" r="175" fill="#7A1F18" opacity=".13"/>
+  <circle cx="165" cy="520" r="220" fill="#D7B56D" opacity=".22"/>
+  <path d="M452 492C454 382 455 294 453 202" stroke="#3C5C2D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M452 492C395 455 344 445 292 466C326 513 386 530 452 492Z" fill="#5E7A38"/>
+  <path d="M452 492C518 441 580 429 648 456C602 512 531 532 452 492Z" fill="#6F8F45"/>
+  <g transform="translate(450 205)">
+    <path d="M0-122C62-104 88-54 58 2C118-4 159 33 159 89C100 110 50 92 24 39C-8 97-62 119-120 91C-125 31-92-10-32-16C-75-62-63-116 0-122Z" fill="#DFA0A0"/>
+    <path d="M0-94C42-81 59-45 39-5C82-8 111 18 110 58C70 72 35 59 17 23C-6 63-43 78-84 59C-87 18-64-9-22-13C-53-45-44-89 0-94Z" fill="#B84C4C" opacity=".78"/>
+    <circle cx="0" cy="0" r="36" fill="#F2D173"/>
+    <circle cx="0" cy="0" r="14" fill="#7A1F18" opacity=".75"/>
+  </g>
+  <text x="56" y="88" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#1F1A12">Paeonia Japonica</text>
+  <text x="56" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#8A6730">пион японский в составе комплекса</text>
+</svg>
