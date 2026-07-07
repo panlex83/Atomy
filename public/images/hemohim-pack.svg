@@ -1,0 +1,14 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="900" rx="90" fill="#F6EFE7"/>
+  <circle cx="702" cy="160" r="120" fill="#E7D0B8" opacity=".65"/>
+  <circle cx="180" cy="720" r="170" fill="#D6B18B" opacity=".35"/>
+  <rect x="240" y="160" width="420" height="590" rx="42" fill="#2B1711"/>
+  <rect x="270" y="190" width="360" height="530" rx="28" fill="#49261B"/>
+  <rect x="300" y="230" width="300" height="105" rx="18" fill="#F0D7B5"/>
+  <text x="450" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#2B1711">HemoHIM</text>
+  <text x="450" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#6B3F2E">Atomy</text>
+  <path d="M335 405C415 355 495 355 565 405C532 493 488 560 450 617C412 560 368 493 335 405Z" fill="#D7A45F"/>
+  <path d="M392 430C436 410 484 410 526 430C506 487 479 531 450 571C421 531 394 487 392 430Z" fill="#F4D497"/>
+  <rect x="325" y="650" width="250" height="30" rx="15" fill="#F0D7B5" opacity=".9"/>
+  <rect x="348" y="690" width="204" height="16" rx="8" fill="#B98955" opacity=".9"/>
+</svg>

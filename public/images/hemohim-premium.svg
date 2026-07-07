@@ -1,0 +1,30 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="900" rx="80" fill="url(#bg)"/>
+<ellipse cx="455" cy="696" rx="250" ry="42" fill="#7B4D24" opacity=".25"/>
+<g filter="url(#shadow)">
+<rect x="245" y="112" width="410" height="640" rx="36" fill="#F7F1E5"/>
+<rect x="270" y="137" width="360" height="590" rx="28" fill="url(#pack)"/>
+<rect x="298" y="165" width="304" height="86" rx="22" fill="#3B2416"/>
+<text x="450" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="35" font-weight="800" fill="#E6C16A">HemoHIM</text>
+<text x="450" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#F7F1E5">Atomy</text>
+<path d="M318 315C375 270 435 287 470 338C510 295 580 292 604 350C643 444 531 527 460 593C383 528 268 438 318 315Z" fill="#7A1F18"/>
+<path d="M367 365C416 335 480 349 511 405C535 374 567 361 598 370C574 319 510 317 470 355C438 310 381 294 327 335C308 380 329 420 367 365Z" fill="#D7B56D" opacity=".85"/>
+<rect x="310" y="614" width="280" height="62" rx="18" fill="#F8E5B6"/>
+<text x="450" y="653" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#3B2416">Korean Herbal Complex</text>
+</g>
+<defs>
+<linearGradient id="bg" x1="112" y1="112" x2="804" y2="820" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF8E8"/>
+<stop offset=".5" stop-color="#E8C576"/>
+<stop offset="1" stop-color="#7B4D24"/>
+</linearGradient>
+<linearGradient id="pack" x1="270" y1="137" x2="630" y2="727" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFFFF"/>
+<stop offset=".48" stop-color="#F9E6BA"/>
+<stop offset="1" stop-color="#B77A38"/>
+</linearGradient>
+<filter id="shadow" x="185" y="72" width="530" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feDropShadow dx="0" dy="36" stdDeviation="30" flood-color="#3B2416" flood-opacity=".35"/>
+</filter>
+</defs>
+</svg>
