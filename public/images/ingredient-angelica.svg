@@ -1,0 +1,11 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="56" fill="#F8F1E3"/>
+  <circle cx="720" cy="130" r="160" fill="#E7C774" opacity=".45"/>
+  <circle cx="150" cy="520" r="210" fill="#7A1F18" opacity=".10"/>
+  <path d="M260 475C332 385 394 300 443 170" stroke="#3D5A2A" stroke-width="16" stroke-linecap="round"/>
+  <path d="M438 183C384 145 343 96 331 47C390 60 431 98 454 151C500 98 553 73 618 80C592 143 535 177 463 186C491 245 490 301 462 354C419 314 406 251 438 183Z" fill="#F3D37B"/>
+  <path d="M438 183C384 145 343 96 331 47C390 60 431 98 454 151C500 98 553 73 618 80C592 143 535 177 463 186C491 245 490 301 462 354C419 314 406 251 438 183Z" stroke="#7A1F18" stroke-width="10" opacity=".65"/>
+  <path d="M258 476C214 450 181 407 160 348C219 355 264 382 293 430C336 390 384 371 439 375C405 429 346 461 258 476Z" fill="#5E7A38"/>
+  <text x="56" y="88" font-family="Arial, sans-serif" font-size="36" font-weight="800" fill="#1F1A12">Angelica Gigas</text>
+  <text x="56" y="128" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#8A6730">корейская дягиль лекарственный</text>
+</svg>
