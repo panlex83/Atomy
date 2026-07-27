@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero({ t }: any) {
   return (
     <section className="relative overflow-hidden bg-[#15110b] text-white">
@@ -8,9 +6,9 @@ export default function Hero({ t }: any) {
         <div className="absolute -right-40 top-10 h-[620px] w-[620px] rounded-full bg-[#d7b56d]/25 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:px-8 lg:min-h-[720px] lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:px-8 lg:min-h-[760px] lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-[#ead7ad]">
+          <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-[#ead7ad] backdrop-blur">
             Корейский продукт Atomy
           </div>
 
@@ -27,46 +25,47 @@ export default function Hero({ t }: any) {
               href={t.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-[#d7b56d] px-8 py-4 text-center font-black text-[#1f1a12] hover:bg-[#e6c77d]"
+              className="rounded-full bg-[#d7b56d] px-8 py-4 text-center font-black text-[#1f1a12] transition hover:-translate-y-0.5 hover:bg-[#e6c77d]"
             >
               {t.hero.cta}
             </a>
 
             <a
               href="#about"
-              className="rounded-full border border-white/15 bg-white/10 px-8 py-4 text-center font-bold text-white hover:bg-white/15"
+              className="rounded-full border border-white/15 bg-white/10 px-8 py-4 text-center font-bold text-white backdrop-blur transition hover:bg-white/15"
             >
               {t.hero.secondary}
             </a>
           </div>
 
           <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
-            <div className="rounded-2xl bg-white/10 p-4">
+            <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur">
               <p className="text-2xl font-black">3</p>
-              <p className="mt-1 text-xs text-white/60">компонента</p>
+              <p className="mt-1 text-xs text-white/60">растительных компонента</p>
             </div>
-            <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-2xl font-black">2009</p>
-              <p className="mt-1 text-xs text-white/60">Atomy</p>
+            <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur">
+              <p className="text-2xl font-black">23</p>
+              <p className="mt-1 text-xs text-white/60">глобальных региона</p>
             </div>
-            <div className="rounded-2xl bg-white/10 p-4">
-              <p className="text-2xl font-black">WA</p>
-              <p className="mt-1 text-xs text-white/60">заказ</p>
+            <div className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur">
+              <p className="text-2xl font-black">60</p>
+              <p className="mt-1 text-xs text-white/60">саше в упаковке</p>
             </div>
           </div>
         </div>
 
         <div className="relative">
-          <div className="rounded-[36px] border border-white/10 bg-white/10 p-5 shadow-2xl shadow-black/30">
-            <div className="rounded-[28px] bg-gradient-to-br from-[#fff8e8] via-[#ead19b] to-[#9a6b35] p-8">
-              <Image
-                src="/images/hemohim-premium.svg"
-                alt="Atomy HemoHIM"
-                width={760}
-                height={760}
-                priority
-                className="mx-auto h-auto w-full drop-shadow-2xl"
-              />
+          <div className="absolute -inset-6 rounded-[48px] bg-gradient-to-br from-[#d7b56d]/20 to-[#7a1f18]/20 blur-2xl" />
+          <div className="relative overflow-hidden rounded-[38px] border border-white/10 bg-white/10 p-3 shadow-2xl shadow-black/30 backdrop-blur">
+            <img
+              src="https://image.atomy.com/US/goods/A00001/org/405/241206000032405.jpg"
+              alt="Официальное фото Atomy HemoHIM"
+              className="aspect-[4/3] w-full rounded-[30px] bg-white object-cover"
+              loading="eager"
+            />
+            <div className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/15 bg-[#15110b]/75 p-4 backdrop-blur-md">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#e8c978]">Official product</p>
+              <p className="mt-1 text-sm text-white/70">Фотография продукта с официального каталога Atomy</p>
             </div>
           </div>
         </div>
