@@ -3,81 +3,18 @@ export const en = {
   siteName: "Atomy HemoHIM",
   whatsapp: "+7 708 271 7008",
   whatsappLink: "https://wa.me/77082717008",
-
-  nav: {
-    product: "Product",
-    ingredients: "Ingredients",
-    benefits: "Benefits",
-    order: "Order",
-    faq: "FAQ",
-  },
-
-  hero: {
-    title: "Atomy HemoHIM",
-    subtitle: "A Korean product for daily body support",
-    description:
-      "HemoHIM is one of Atomy’s well-known products, based on a plant complex with Angelica Gigas, Cnidium Officinale and Paeonia Japonica.",
-    cta: "Message us on WhatsApp",
-    secondary: "Learn more",
-    imageAlt: "HemoHIM product photo",
-  },
-
-  productIntro: {
-    title: "What is HemoHIM?",
-    text:
-      "HemoHIM is an Atomy plant-based product in a convenient sachet format. It is used as part of a daily routine to support the body, especially during periods of high workload, tiredness and seasonal changes.",
-    note:
-      "HemoHIM is not a medicine and is not intended to diagnose, treat or prevent diseases.",
-  },
-
-  ingredients: {
-    title: "Ingredients",
-    text: "HemoHIM is based on three plant components:",
-    items: ["Angelica Gigas", "Cnidium Officinale", "Paeonia Japonica"],
-  },
-
-  benefits: {
-    title: "Why people choose HemoHIM",
-    items: [
-      { title: "Korean origin", text: "The product is connected with Korean development and is based on a plant complex." },
-      { title: "Convenient format", text: "Sachets are easy to use at home, at work or while travelling." },
-      { title: "International product", text: "HemoHIM is available in several Atomy markets and is one of the company’s recognizable products." },
-      { title: "Focus on quality", text: "Atomy promotes its products around the principle of quality at a reasonable price." },
-    ],
-  },
-
-  aboutAtomy: {
-    title: "About Atomy",
-    text:
-      "Atomy is a South Korean company founded in 2009. It operates in health, beauty, home care and everyday consumer products. Atomy’s philosophy is to offer high-quality products at a reasonable price.",
-  },
-
-  order: {
-    title: "How to order HemoHIM",
-    steps: ["Message us on WhatsApp.", "Check availability and order terms.", "Get a product consultation.", "Place your order in a convenient way."],
-    cta: "Order via WhatsApp",
-  },
-
-  faq: {
-    title: "FAQ",
-    items: [
-      { question: "What is HemoHIM?", answer: "HemoHIM is an Atomy plant-based product with Angelica Gigas, Cnidium Officinale and Paeonia Japonica." },
-      { question: "Is it a medicine?", answer: "No. HemoHIM is not a medicine. The information on this website is for reference only." },
-      { question: "How can I order HemoHIM?", answer: "Message us on WhatsApp. We will provide availability, price, order and delivery details." },
-      { question: "Can I use HemoHIM if I have a medical condition?", answer: "If you have medical conditions, are pregnant, have allergies or take medication, consult a specialist before use." },
-    ],
-  },
-
-  contacts: {
-    title: "Contacts",
-    whatsapp: "+7 708 271 7008",
-    email: "hemohim.atomy.ru@gmail.com",
-    instagram: "hemohim.atomy.ru",
-    tiktok: "hemohim.atomy.ru",
-    facebook: "hemohim.atomy.ru@gmail.com",
-  },
-
-  footer: { infoTitle: "Information" },
-  disclaimer:
-    "This website is for informational purposes only. The product is not a medicine. If you have medical conditions, are pregnant, have allergies or take medication, consult a specialist before use.",
+  nav: { product: "Product", ingredients: "Ingredients", benefits: "Benefits", atomy: "Atomy", order: "Order", faq: "FAQ" },
+  common: { koreanProduct: "A Korean Atomy product", productLabel: "Product", ingredientsLabel: "Ingredients", benefitsLabel: "Benefits", videoLabel: "Video", galleryLabel: "Gallery", formatLabel: "Format", orderLabel: "Ordering", contactsLabel: "Contact us", languageLabel: "Language", consultation: "Get a consultation", watchVideo: "Watch the video" },
+  hero: { title: "Atomy HemoHIM", description: "A premium Korean product featuring a carefully developed botanical complex of Angelica Gigas, Cnidium Officinale and Paeonia Japonica.", cta: "Message us on WhatsApp", secondary: "Discover HemoHIM", imageAlt: "Atomy HemoHIM product packaging", stats: [{ value: "3", label: "botanical ingredients" }, { value: "20 ml", label: "per sachet" }, { value: "60", label: "sachets per box" }] },
+  productIntro: { title: "What is HemoHIM?", text: "HemoHIM is an Atomy botanical product supplied in convenient single-serve sachets. Its compact format fits naturally into a daily routine at home, at work or while travelling.", note: "HemoHIM is not a medicine and is not intended to diagnose, treat or prevent disease.", imageAlt: "Atomy HemoHIM in convenient single-serve sachets", imageBadge: "Convenient format", imageTitle: "20 ml single-serve sachets", imageText: "60 sachets in each box" },
+  ingredients: { title: "Three botanical ingredients", text: "The distinctive HemoHIM complex combines three carefully selected botanical ingredients.", items: [{ title: "Angelica Gigas", description: "Korean angelica, one of the three botanicals at the heart of the HemoHIM complex.", imageAlt: "Angelica Gigas used in the HemoHIM botanical complex" }, { title: "Cnidium Officinale", description: "A traditional botanical ingredient selected as part of HemoHIM’s proprietary blend.", imageAlt: "Cnidium Officinale used in the HemoHIM botanical complex" }, { title: "Paeonia Japonica", description: "Japanese peony, completing the balanced three-botanical formula.", imageAlt: "Paeonia Japonica used in the HemoHIM botanical complex" }] },
+  benefits: { title: "Why choose HemoHIM", items: [{ title: "Developed in Korea", text: "A product rooted in Korean research and botanical expertise." }, { title: "Convenient sachets", text: "Easy to store, carry and include in your everyday routine." }, { title: "International recognition", text: "One of Atomy’s best-known products across international markets." }, { title: "Quality-focused philosophy", text: "Aligned with Atomy’s principle of exceptional quality at a reasonable price." }] },
+  video: { title: "Discover the story of HemoHIM", description: "Watch the official presentation to learn about the product concept, its botanical ingredients and the research behind HemoHIM.", eyebrow: "Official presentation", cardTitle: "What you will learn", points: ["How HemoHIM was developed", "The three-botanical complex", "Atomy’s approach to product quality"], button: "Ask a question on WhatsApp", iframeTitle: "Atomy HemoHIM presentation video" },
+  gallery: { title: "HemoHIM up close", description: "Official product images showing the box, individual packaging and convenient sachet format.", images: ["Atomy HemoHIM official product image", "Atomy HemoHIM packaging", "Atomy HemoHIM sachets"], formatTitle: "Convenient single-serve sachets for everyday use", formatText: "The compact sachets are easy to store at home or take with you. Pack size and directions for use may vary by market; always refer to the information on your local packaging." },
+  aboutAtomy: { label: "Atomy", title: "About Atomy", text: "Atomy is a South Korean consumer company founded in 2009. It offers products across health, beauty, personal care, home care and everyday living, guided by its philosophy of delivering exceptional quality at a reasonable price." },
+  order: { title: "How to order HemoHIM", steps: ["Message us on WhatsApp.", "Confirm availability, price and delivery options.", "Receive clear product information and answers to your questions.", "Place your order using the most convenient option."], cta: "Order via WhatsApp" },
+  faq: { title: "Frequently asked questions", items: [{ question: "What is HemoHIM?", answer: "HemoHIM is an Atomy botanical product based on a complex of Angelica Gigas, Cnidium Officinale and Paeonia Japonica." }, { question: "Is HemoHIM a medicine?", answer: "No. HemoHIM is not a medicine. The information on this website is provided for general informational purposes only." }, { question: "How can I order HemoHIM?", answer: "Send us a message on WhatsApp. We will confirm availability, current pricing, payment options and delivery terms." }, { question: "Can I use HemoHIM if I have a medical condition?", answer: "If you have a medical condition, are pregnant or breastfeeding, have allergies, or take medication, consult a qualified healthcare professional before use." }] },
+  contacts: { label: "Contact us", title: "We are here to help", description: "WhatsApp is the fastest way to reach us. Contact us for availability, ordering information and delivery options.", whatsapp: "+7 708 271 7008", email: "hemohim.atomy.ru@gmail.com", instagram: "hemohim.atomy.ru", tiktok: "hemohim.atomy.ru", facebook: "hemohim.atomy.ru@gmail.com" },
+  footer: { infoTitle: "Information", productLinks: "Product", contactLinks: "Contact" },
+  disclaimer: "This website is for informational purposes only. HemoHIM is not a medicine. If you have a medical condition, are pregnant or breastfeeding, have allergies, or take medication, consult a qualified healthcare professional before use."
 };
