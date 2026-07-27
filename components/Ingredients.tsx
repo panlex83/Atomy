@@ -1,7 +1,7 @@
 const ingredientImages = [
-  "/images/ingredient-angelica.svg",
-  "/images/ingredient-cnidium.svg",
-  "/images/ingredient-paeonia.svg",
+  "https://global.atomy.com/en/img/contents/sub02/sub020201_cultivation02.png",
+  "https://global.atomy.com/en/img/contents/sub02/sub020201_cultivation03.png",
+  "https://global.atomy.com/en/img/contents/sub02/sub020201_cultivation01.png",
 ];
 
 export default function Ingredients({ t }: any) {
