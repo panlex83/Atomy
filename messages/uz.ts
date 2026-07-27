@@ -3,52 +3,18 @@ export const uz = {
   siteName: "Atomy HemoHIM",
   whatsapp: "+7 708 271 7008",
   whatsappLink: "https://wa.me/77082717008",
-
-  nav: { product: "HemoHIM nima?", ingredients: "Tarkibi", benefits: "Nega HemoHIM tanlanadi", order: "Тапсырыс", faq: "FAQ" },
-
-  hero: {
-    title: "Atomy HemoHIM",
-    subtitle: "Organizmni kundalik qo‘llab-quvvatlash uchun koreys mahsuloti",
-    description: "HemoHIM — Atomy компаниясының белгілі өнімдерінің бірі. Оның негізінде Angelica Gigas, Cnidium Officinale және Paeonia Japonica өсімдік кешені бар.",
-    cta: "WhatsApp orqali yozish",
-    secondary: "Batafsil bilish",
-    imageAlt: "HemoHIM өнімінің суреті",
-  },
-
-  productIntro: {
-    title: "HemoHIM nima?",
-    text: "HemoHIM — Atomy компаниясының ыңғайлы саше форматындағы өсімдік негізді өнімі. Оны күнделікті рационның бөлігі ретінде қолданады.",
-    note: "HemoHIM дәрілік зат емес және ауруларды анықтау, емдеу немесе алдын алу үшін арналмаған.",
-  },
-
-  ingredients: { title: "Tarkibi", text: "HemoHIM негізінде үш өсімдік компоненті бар:", items: ["Angelica Gigas", "Cnidium Officinale", "Paeonia Japonica"] },
-
-  benefits: {
-    title: "Nega HemoHIM tanlanadi",
-    items: [
-      { title: "Кореялық шығу тегі", text: "Өнім кореялық әзірлемелермен байланысты және өсімдік кешеніне негізделген." },
-      { title: "Ыңғайлы формат", text: "Сашені үйде, жұмыста немесе сапарда қолдану ыңғайлы." },
-      { title: "Халықаралық өнім", text: "HemoHIM Atomy компаниясының әртүрлі нарықтарында ұсынылған." },
-      { title: "Сапаға назар", text: "Atomy өнімдерін сапа және ақылға қонымды баға қағидаты бойынша ұсынады." },
-    ],
-  },
-
-  aboutAtomy: { title: "Atomy kompaniyasi haqida", text: "Atomy — 2009 жылы құрылған Оңтүстік Корея компаниясы. Компания денсаулық, сұлулық, үй күтімі және күнделікті тұтыну тауарлары бағытында жұмыс істейді." },
-
-  order: { title: "HemoHIM qanday buyurtma qilinadi", steps: ["WhatsApp арқылы жазыңыз.", "Бар-жоғын және тапсырыс шарттарын нақтылаңыз.", "Өнім бойынша кеңес алыңыз.", "Тапсырысты ыңғайлы тәсілмен рәсімдеңіз."], cta: "WhatsApp арқылы тапсырыс беру" },
-
-  faq: {
-    title: "Ko‘p beriladigan savollar",
-    items: [
-      { question: "HemoHIM деген не?", answer: "HemoHIM — Angelica Gigas, Cnidium Officinale және Paeonia Japonica кешені негізіндегі Atomy өнімі." },
-      { question: "Бұл дәрі ме?", answer: "Жоқ. HemoHIM дәрілік зат емес. Сайттағы ақпарат анықтамалық сипатта." },
-      { question: "Қалай тапсырыс беруге болады?", answer: "WhatsApp арқылы жазыңыз. Біз бар-жоғын, бағасын, тапсырыс және жеткізу шарттарын айтамыз." },
-      { question: "Аурулар болған жағдайда қолдануға бола ма?", answer: "Ауру, жүктілік, аллергия немесе дәрі қабылдау жағдайында алдымен маманмен кеңесу керек." },
-    ],
-  },
-
-  contacts: { title: "Kontaktlar", whatsapp: "+7 708 271 7008", email: "hemohim.atomy.ru@gmail.com", instagram: "hemohim.atomy.ru", tiktok: "hemohim.atomy.ru", facebook: "hemohim.atomy.ru@gmail.com" },
-
-  footer: { infoTitle: "Maʼlumot" },
-  disclaimer: "Сайт ақпараттық сипатта. Өнім дәрілік зат емес. Ауру, жүктілік, аллергия немесе дәрі қабылдау жағдайында қолданар алдында маманмен кеңесіңіз.",
+  nav: { product: "Mahsulot haqida", ingredients: "Tarkibi", benefits: "Afzalliklari", atomy: "Atomy", order: "Buyurtma", faq: "Savollar" },
+  common: { koreanProduct: "Atomy kompaniyasining koreys mahsuloti", productLabel: "Mahsulot haqida", ingredientsLabel: "Tarkibi", benefitsLabel: "Afzalliklari", videoLabel: "Video", galleryLabel: "Galereya", formatLabel: "Format", orderLabel: "Buyurtma", contactsLabel: "Aloqa", languageLabel: "Til", consultation: "Maslahat olish", watchVideo: "Videoni ko‘rish" },
+  hero: { title: "Atomy HemoHIM", description: "Angelica Gigas, Cnidium Officinale va Paeonia Japonica asosidagi puxta ishlab chiqilgan o‘simlik kompleksiga ega premium koreys mahsuloti.", cta: "WhatsApp orqali yozish", secondary: "HemoHIM haqida bilish", imageAlt: "Atomy HemoHIM qadoqlanishi", stats: [{ value: "3", label: "o‘simlik komponenti" }, { value: "20 ml", label: "har bir sasheda" }, { value: "60", label: "har bir qutida" }] },
+  productIntro: { title: "HemoHIM nima?", text: "HemoHIM — Atomy kompaniyasining qulay bir martalik sashelarda taqdim etiladigan o‘simlik asosidagi mahsuloti. Ixcham format uni uyda, ishda yoki safarda kundalik hayotga oson qo‘shishga yordam beradi.", note: "HemoHIM dori vositasi emas va kasalliklarni aniqlash, davolash yoki oldini olish uchun mo‘ljallanmagan.", imageAlt: "Atomy HemoHIM qulay sashelarda", imageBadge: "Qulay format", imageTitle: "20 ml bir martalik sashelarda", imageText: "Har bir qutida 60 ta sashe" },
+  ingredients: { title: "Uchta o‘simlik komponenti", text: "HemoHIM maxsus kompleksi puxta tanlangan uchta o‘simlik komponentini birlashtiradi.", items: [{ title: "Angelica Gigas", description: "Koreys angelikasi — HemoHIM kompleksining uchta asosiy komponentidan biri.", imageAlt: "HemoHIM kompleksidagi Angelica Gigas" }, { title: "Cnidium Officinale", description: "HemoHIM maxsus formulasiga kiritilgan an’anaviy o‘simlik komponenti.", imageAlt: "HemoHIM kompleksidagi Cnidium Officinale" }, { title: "Paeonia Japonica", description: "Uch o‘simlikdan iborat muvozanatli formulani yakunlovchi yapon pioni.", imageAlt: "HemoHIM kompleksidagi Paeonia Japonica" }] },
+  benefits: { title: "Nega HemoHIM tanlanadi", items: [{ title: "Koreyada ishlab chiqilgan", text: "Koreys tadqiqotlari va o‘simlik komponentlari bo‘yicha tajribaga asoslangan mahsulot." }, { title: "Qulay sashelar", text: "Saqlash, o‘zingiz bilan olib yurish va kundalik rejimga qo‘shish oson." }, { title: "Xalqaro tan olinishi", text: "Atomy kompaniyasining xalqaro bozorlardagi eng mashhur mahsulotlaridan biri." }, { title: "Sifatga e’tibor", text: "Atomy tamoyiliga mos: yuqori sifat — oqilona narxda." }] },
+  video: { title: "HemoHIM tarixini kashf eting", description: "Mahsulot g‘oyasi, o‘simlik kompleksi va HemoHIM yaratilishiga asos bo‘lgan yondashuv haqida rasmiy videoni tomosha qiling.", eyebrow: "Rasmiy taqdimot", cardTitle: "Videoda nimalarni bilib olasiz", points: ["HemoHIM qanday yaratilgani", "Uch o‘simlikdan iborat kompleks", "Atomy mahsulot sifatiga qanday yondashishi"], button: "WhatsApp orqali savol berish", iframeTitle: "Atomy HemoHIM video taqdimoti" },
+  gallery: { title: "HemoHIM yaqindan", description: "Mahsulotning rasmiy suratlari: quti, tashqi ko‘rinish va qulay sashe formati.", images: ["Atomy HemoHIM rasmiy surati", "Atomy HemoHIM qadoqlanishi", "Atomy HemoHIM sashelari"], formatTitle: "Kundalik foydalanish uchun qulay bir martalik sashelar", formatText: "Ixcham sashelarni uyda saqlash va o‘zingiz bilan olib yurish qulay. Qadoq hajmi va qo‘llash bo‘yicha ko‘rsatmalar bozorga qarab farq qilishi mumkin — mahalliy qadoqdagi ma’lumotga amal qiling." },
+  aboutAtomy: { label: "Atomy", title: "Atomy kompaniyasi haqida", text: "Atomy — 2009-yilda tashkil etilgan Janubiy Koreya kompaniyasi. U sog‘liq, go‘zallik, shaxsiy parvarish, uy va kundalik hayot uchun mahsulotlarni yuqori sifatni oqilona narxda taklif etish tamoyili asosida taqdim etadi." },
+  order: { title: "HemoHIM qanday buyurtma qilinadi", steps: ["WhatsApp orqali yozing.", "Mavjudligi, amaldagi narxi va yetkazib berish variantlarini aniqlashtiring.", "Mahsulot haqida tushunarli ma’lumot va savollaringizga javob oling.", "Buyurtmani sizga qulay usulda rasmiylashtiring."], cta: "WhatsApp orqali buyurtma berish" },
+  faq: { title: "Ko‘p beriladigan savollar", items: [{ question: "HemoHIM nima?", answer: "HemoHIM — Angelica Gigas, Cnidium Officinale va Paeonia Japonica kompleksiga asoslangan Atomy o‘simlik mahsuloti." }, { question: "HemoHIM dori vositasimi?", answer: "Yo‘q. HemoHIM dori vositasi emas. Saytdagi ma’lumot umumiy tanishtirish maqsadida taqdim etilgan." }, { question: "HemoHIM qanday buyurtma qilinadi?", answer: "WhatsApp orqali yozing. Biz mavjudligi, amaldagi narxi, to‘lov usullari va yetkazib berish shartlarini aniqlashtiramiz." }, { question: "Kasallik bo‘lsa, foydalanish mumkinmi?", answer: "Kasallik, homiladorlik yoki emizish davri, allergiya yoki dori qabul qilish holatida avval malakali mutaxassis bilan maslahatlashing." }] },
+  contacts: { label: "Aloqa", title: "Biz bilan bog‘laning", description: "WhatsApp — biz bilan bog‘lanishning eng tezkor usuli. Mavjudlik, buyurtma va yetkazib berish shartlarini bilish uchun yozing.", whatsapp: "+7 708 271 7008", email: "hemohim.atomy.ru@gmail.com", instagram: "hemohim.atomy.ru", tiktok: "hemohim.atomy.ru", facebook: "hemohim.atomy.ru@gmail.com" },
+  footer: { infoTitle: "Ma’lumot", productLinks: "Mahsulot", contactLinks: "Aloqa" },
+  disclaimer: "Sayt axborot maqsadida yaratilgan. HemoHIM dori vositasi emas. Kasallik, homiladorlik yoki emizish davri, allergiya yoki dori qabul qilish holatida foydalanishdan oldin mutaxassis bilan maslahatlashing."
 };
