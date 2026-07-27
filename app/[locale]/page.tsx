@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ProductIntro from "@/components/ProductIntro";
 import Ingredients from "@/components/Ingredients";
 import Benefits from "@/components/Benefits";
+import ProductGallery from "@/components/ProductGallery";
 import VideoBlock from "@/components/VideoBlock";
 import AboutAtomy from "@/components/AboutAtomy";
 import OrderSteps from "@/components/OrderSteps";
@@ -29,6 +30,7 @@ export default async function Page({ params }: PageProps) {
       <ProductIntro t={t} />
       <Ingredients t={t} />
       <Benefits t={t} />
+      <ProductGallery />
       <VideoBlock t={t} />
       <AboutAtomy t={t} />
       <OrderSteps t={t} />
