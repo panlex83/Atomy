@@ -3,8 +3,8 @@ import Hero from "@/components/Hero";
 import ProductIntro from "@/components/ProductIntro";
 import Ingredients from "@/components/Ingredients";
 import Benefits from "@/components/Benefits";
-import ProductGallery from "@/components/ProductGallery";
 import VideoBlock from "@/components/VideoBlock";
+import ProductGallery from "@/components/ProductGallery";
 import AboutAtomy from "@/components/AboutAtomy";
 import OrderSteps from "@/components/OrderSteps";
 import FAQ from "@/components/FAQ";
@@ -14,9 +14,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { getMessages } from "@/messages";
 import { defaultLocale, isLocale, type Locale } from "@/lib/i18n";
 
-type PageProps = {
-  params: Promise<{ locale: string }>;
-};
+type PageProps = { params: Promise<{ locale: string }> };
 
 export default async function Page({ params }: PageProps) {
   const { locale } = await params;
@@ -30,8 +28,8 @@ export default async function Page({ params }: PageProps) {
       <ProductIntro t={t} />
       <Ingredients t={t} />
       <Benefits t={t} />
-      <ProductGallery />
       <VideoBlock t={t} />
+      <ProductGallery t={t} />
       <AboutAtomy t={t} />
       <OrderSteps t={t} />
       <FAQ t={t} />
@@ -43,11 +41,5 @@ export default async function Page({ params }: PageProps) {
 }
 
 export function generateStaticParams() {
-  return [
-    { locale: "ru" },
-    { locale: "en" },
-    { locale: "kk" },
-    { locale: "uz" },
-    { locale: "ky" },
-  ];
+  return [{ locale: "ru" }, { locale: "en" }, { locale: "kk" }, { locale: "uz" }, { locale: "ky" }];
 }
