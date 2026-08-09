@@ -15,17 +15,32 @@ export default function ProductGallery({ t }: any) {
           </div>
           <p className="max-w-xl text-lg leading-8 text-white/65">{t.gallery.description}</p>
         </div>
-        <div className="mt-10 grid auto-rows-[260px] gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {galleryImages.map((src, index) => (
-            <figure key={src} className={`group relative overflow-hidden rounded-[30px] border border-white/10 bg-white/5 ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
-              <img src={src} alt={t.gallery.images[index]} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 pt-16"><figcaption className="text-sm font-bold text-white/90">{t.gallery.images[index]}</figcaption></div>
+            <figure
+              key={src}
+              className={`group relative h-[260px] overflow-hidden rounded-[30px] border border-white/10 bg-white/5 ${
+                index === 0 ? "md:col-span-2 md:h-[540px] lg:row-span-2" : ""
+              }`}
+            >
+              <img
+                src={src}
+                alt={t.gallery.images[index]}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-5 pt-16">
+                <figcaption className="text-sm font-bold text-white/90">{t.gallery.images[index]}</figcaption>
+              </div>
             </figure>
           ))}
-          <div className="flex flex-col justify-between rounded-[30px] border border-[#d7b56d]/30 bg-gradient-to-br from-[#7a1f18] to-[#302317] p-7 lg:col-span-2">
-            <div><p className="text-sm font-black uppercase tracking-[0.2em] text-[#f0d690]">{t.common.formatLabel}</p><p className="mt-4 max-w-lg text-3xl font-black">{t.gallery.formatTitle}</p></div>
-            <p className="mt-8 max-w-xl leading-7 text-white/70">{t.gallery.formatText}</p>
-          </div>
+        </div>
+
+        <div className="mt-5 rounded-[30px] border border-[#d7b56d]/30 bg-gradient-to-br from-[#7a1f18] to-[#302317] p-7 sm:p-8 md:p-10">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-[#f0d690]">{t.common.formatLabel}</p>
+          <p className="mt-4 max-w-4xl text-3xl font-black leading-tight sm:text-4xl md:text-5xl">{t.gallery.formatTitle}</p>
+          <p className="mt-6 max-w-4xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">{t.gallery.formatText}</p>
         </div>
       </div>
     </section>
