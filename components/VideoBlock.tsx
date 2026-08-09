@@ -12,7 +12,7 @@ export default function VideoBlock({ t }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px]">
-              <iframe src="https://www.youtube-nocookie.com/embed/C9Qqre3lstQ?rel=0&modestbranding=1" title={t.video.iframeTitle} className="h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+              <iframe src="https://www.youtube-nocookie.com/embed/O2IoD5CBhaQ?start=50&rel=0&modestbranding=1" title={t.video.iframeTitle} className="h-full w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
             </div>
           </div>
           <aside className="flex flex-col justify-between rounded-[32px] border border-white/10 bg-white/[0.07] p-7 backdrop-blur md:p-8">
