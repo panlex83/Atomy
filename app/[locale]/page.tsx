@@ -6,6 +6,9 @@ import Benefits from "@/components/Benefits";
 import VideoBlock from "@/components/VideoBlock";
 import ProductGallery from "@/components/ProductGallery";
 import AboutAtomy from "@/components/AboutAtomy";
+import Catalog from "@/components/Catalog";
+import Registration from "@/components/Registration";
+import Reviews from "@/components/Reviews";
 import OrderSteps from "@/components/OrderSteps";
 import FAQ from "@/components/FAQ";
 import Contacts from "@/components/Contacts";
@@ -31,6 +34,9 @@ export default async function Page({ params }: PageProps) {
       <VideoBlock t={t} />
       <ProductGallery t={t} />
       <AboutAtomy t={t} />
+      <Catalog t={t} />
+      <Registration t={t} />
+      <Reviews t={t} />
       <OrderSteps t={t} />
       <FAQ t={t} />
       <Contacts t={t} />
