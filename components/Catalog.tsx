@@ -9,7 +9,6 @@ export default function Catalog({ t }: any) {
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.2em] text-[#d7b56d]">{t.catalog.label}</p>
               <h2 className="mt-4 text-4xl font-black tracking-tight md:text-5xl">{t.catalog.title}</h2>
-              <p className="mt-6 text-lg leading-8 text-white/70">{t.catalog.description}</p>
             </div>
 
             <a
