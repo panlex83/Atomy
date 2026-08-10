@@ -1,5 +1,16 @@
 export default function Hero({ t }: any) {
   const productImage = "https://image.atomy.com/US/goods/A00001/org/405/241206000032405.jpg";
+  const ingredientNames = t.ingredients.items.map((item: any) => item.title);
+
+  const heroDescriptions: Record<string, string> = {
+    ru: `Премиальный корейский продукт на основе тщательно разработанного растительного комплекса: ${ingredientNames[0]}, ${ingredientNames[1]} и ${ingredientNames[2]}.`,
+    en: `A premium Korean product based on a carefully developed botanical complex of ${ingredientNames[0]}, ${ingredientNames[1]} and ${ingredientNames[2]}.`,
+    kk: `Мұқият әзірленген өсімдік кешеніне негізделген премиум кореялық өнім: ${ingredientNames[0]}, ${ingredientNames[1]} және ${ingredientNames[2]}.`,
+    uz: `Puxta ishlab chiqilgan o‘simlik kompleksiga asoslangan premium koreys mahsuloti: ${ingredientNames[0]}, ${ingredientNames[1]} va ${ingredientNames[2]}.`,
+    ky: `Кылдат иштелип чыккан өсүмдүк комплексине негизделген премиум кореялык өнүм: ${ingredientNames[0]}, ${ingredientNames[1]} жана ${ingredientNames[2]}.`,
+  };
+
+  const description = heroDescriptions[t.locale] || t.hero.description;
 
   return (
     <section className="relative overflow-hidden bg-[#15110b] text-white">
@@ -11,7 +22,7 @@ export default function Hero({ t }: any) {
         <div>
           <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-[#ead7ad]">{t.common.koreanProduct}</div>
           <h1 className="text-5xl font-black leading-none tracking-tight md:text-7xl">{t.hero.title}</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75 md:text-xl">{t.hero.description}</p>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75 md:text-xl">{description}</p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href={t.whatsappLink} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#d7b56d] px-8 py-4 text-center font-black text-[#1f1a12] hover:bg-[#e6c77d]">{t.hero.cta}</a>
             <a href="#about" className="rounded-full border border-white/15 bg-white/10 px-8 py-4 text-center font-bold text-white hover:bg-white/15">{t.hero.secondary}</a>
