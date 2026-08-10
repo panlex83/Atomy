@@ -25,13 +25,7 @@ export default function Reviews({ t }: any) {
 
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video
-                src="/api/media/review2"
-                controls
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-contain"
-              >
+              <video src="/api/review-video" controls playsInline preload="metadata" className="h-full w-full object-contain">
                 {t.reviews.iframeTitle}
               </video>
             </div>
