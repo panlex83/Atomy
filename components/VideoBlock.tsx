@@ -12,13 +12,7 @@ export default function VideoBlock({ t }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video
-                src="/api/media/history"
-                controls
-                playsInline
-                preload="metadata"
-                className="h-full w-full object-contain"
-              >
+              <video src="/api/history-video" controls playsInline preload="metadata" className="h-full w-full object-contain">
                 {t.video.iframeTitle}
               </video>
             </div>
