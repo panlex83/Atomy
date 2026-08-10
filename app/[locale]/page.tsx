@@ -13,7 +13,6 @@ import OrderSteps from "@/components/OrderSteps";
 import FAQ from "@/components/FAQ";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { getMessages } from "@/messages";
 import { defaultLocale, isLocale, type Locale } from "@/lib/i18n";
 
@@ -41,7 +40,6 @@ export default async function Page({ params }: PageProps) {
       <FAQ t={t} />
       <Contacts t={t} />
       <Footer t={t} />
-      <FloatingWhatsApp t={t} />
     </main>
   );
 }
