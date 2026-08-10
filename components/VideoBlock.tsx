@@ -1,6 +1,4 @@
 export default function VideoBlock({ t }: any) {
-  const driveVideo = "https://drive.google.com/file/d/1bC1TrDuc5P1UxkUZT_gaiAMeLQAUacce/preview";
-
   return (
     <section className="relative overflow-hidden bg-[#15110b] px-5 py-20 text-white md:px-8">
       <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-[#7a1f18]/35 blur-3xl" />
@@ -14,13 +12,15 @@ export default function VideoBlock({ t }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <iframe
-                src={driveVideo}
-                title={t.video.iframeTitle}
-                className="h-full w-full border-0"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-              />
+              <video
+                src="/api/media/history"
+                controls
+                playsInline
+                preload="metadata"
+                className="h-full w-full object-contain"
+              >
+                {t.video.iframeTitle}
+              </video>
             </div>
           </div>
           <aside className="flex flex-col justify-between rounded-[32px] border border-white/10 bg-white/[0.07] p-7 backdrop-blur md:p-8">
@@ -28,12 +28,7 @@ export default function VideoBlock({ t }: any) {
               <p className="text-xs font-black uppercase tracking-[0.22em] text-[#d7b56d]">{t.video.eyebrow}</p>
               <h3 className="mt-4 text-3xl font-black">{t.video.cardTitle}</h3>
               <div className="mt-7 space-y-4">
-                {t.video.points.map((point: string, index: number) => (
-                  <div key={point} className="flex gap-4">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#d7b56d] text-sm font-black text-[#1f1a12]">{index + 1}</span>
-                    <p className="pt-1 leading-7 text-white/75">{point}</p>
-                  </div>
-                ))}
+                {t.video.points.map((point: string, index: number) => <div key={point} className="flex gap-4"><span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#d7b56d] text-sm font-black text-[#1f1a12]">{index + 1}</span><p className="pt-1 leading-7 text-white/75">{point}</p></div>)}
               </div>
             </div>
             <a href={t.whatsappLink} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex justify-center rounded-full bg-[#d7b56d] px-6 py-4 text-center font-black text-[#1f1a12] hover:bg-[#e6c77d]">{t.video.button}</a>
