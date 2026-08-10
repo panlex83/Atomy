@@ -9,17 +9,10 @@ export default function Catalog({ t }: any) {
             <p className="text-sm font-black uppercase tracking-[0.2em] text-[#9a6b35]">{t.catalog.label}</p>
             <h2 className="mt-4 text-4xl font-black tracking-tight text-[#1f1a12] md:text-5xl">{t.catalog.title}</h2>
           </div>
-          <a
-            href="/api/media/catalog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-[#15110b] px-6 py-3 text-center font-black text-white hover:bg-[#2a2115]"
-          >
-            PDF
-          </a>
+          <a href="/api/catalog-pdf" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full bg-[#15110b] px-6 py-3 text-center font-black text-white hover:bg-[#2a2115]">PDF</a>
         </div>
 
-        <PdfFlipbook src="/api/media/catalog" title={t.catalog.title} />
+        <PdfFlipbook src="/api/catalog-pdf" title={t.catalog.title} />
       </div>
     </section>
   );
