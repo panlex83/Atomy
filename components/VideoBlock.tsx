@@ -1,5 +1,12 @@
-export default function VideoBlock({ t }: any) {
-  const productVideo = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/943618048098059177.mp4";
+export default function VideoBlock({ t, locale }: any) {
+  const mainVideo = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/943618048098059177.mp4";
+  const tracks = [
+    { code: "ru", label: "Русский" },
+    { code: "en", label: "English" },
+    { code: "kk", label: "Қазақша" },
+    { code: "uz", label: "O‘zbekcha" },
+    { code: "ky", label: "Кыргызча" },
+  ];
 
   return (
     <section className="relative overflow-hidden bg-[#15110b] px-5 py-20 text-white md:px-8">
@@ -14,7 +21,17 @@ export default function VideoBlock({ t }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video src={productVideo} controls playsInline preload="metadata" className="h-full w-full object-contain">
+              <video src={mainVideo} controls playsInline preload="metadata" className="h-full w-full object-contain" crossOrigin="anonymous">
+                {tracks.map((track) => (
+                  <track
+                    key={track.code}
+                    src={`/subtitles/hemohim-main-${track.code}.vtt`}
+                    kind="subtitles"
+                    srcLang={track.code}
+                    label={track.label}
+                    default={locale === track.code}
+                  />
+                ))}
                 {t.video.iframeTitle}
               </video>
             </div>
