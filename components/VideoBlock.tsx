@@ -21,7 +21,7 @@ export default function VideoBlock({ t, locale }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video src={mainVideo} controls playsInline preload="metadata" className="h-full w-full object-contain" crossOrigin="anonymous">
+              <video src={mainVideo} controls playsInline preload="metadata" className="h-full w-full object-contain">
                 {tracks.map((track) => (
                   <track
                     key={track.code}
