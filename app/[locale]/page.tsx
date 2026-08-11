@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps) {
       <AboutAtomy t={t} />
       <Catalog t={t} />
       <Registration t={t} />
-      <Reviews t={t} />
+      <Reviews t={t} locale={safeLocale} />
       <OrderSteps t={t} />
       <FAQ t={t} />
       <Contacts t={t} />
