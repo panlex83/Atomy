@@ -30,7 +30,7 @@ export default async function Page({ params }: PageProps) {
       <ProductIntro t={t} />
       <Ingredients t={t} />
       <Benefits t={t} />
-      <VideoBlock t={t} />
+      <VideoBlock t={t} locale={safeLocale} />
       <ProductGallery t={t} />
       <AboutAtomy t={t} />
       <Catalog t={t} />
