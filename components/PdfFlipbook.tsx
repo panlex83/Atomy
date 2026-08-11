@@ -8,7 +8,15 @@ declare global {
   }
 }
 
-export default function PdfFlipbook({ src, title }: { src: string; title: string }) {
+const ui: Record<string, { loading: string; error: string; previous: string; next: string }> = {
+  ru: { loading: "Загрузка каталога…", error: "Не удалось загрузить каталог", previous: "Предыдущая страница", next: "Следующая страница" },
+  en: { loading: "Loading catalog…", error: "Unable to load the catalog", previous: "Previous page", next: "Next page" },
+  kk: { loading: "Каталог жүктелуде…", error: "Каталогты жүктеу мүмкін болмады", previous: "Алдыңғы бет", next: "Келесі бет" },
+  uz: { loading: "Katalog yuklanmoqda…", error: "Katalogni yuklab bo‘lmadi", previous: "Oldingi sahifa", next: "Keyingi sahifa" },
+  ky: { loading: "Каталог жүктөлүүдө…", error: "Каталогду жүктөө мүмкүн болгон жок", previous: "Мурунку бет", next: "Кийинки бет" },
+};
+
+export default function PdfFlipbook({ src, title, locale = "ru" }: { src: string; title: string; locale?: string }) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [pdf, setPdf] = useState<any>(null);
@@ -17,6 +25,7 @@ export default function PdfFlipbook({ src, title }: { src: string; title: string
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [touchStart, setTouchStart] = useState<number | null>(null);
+  const labels = ui[locale] || ui.ru;
 
   useEffect(() => {
     let cancelled = false;
@@ -55,7 +64,7 @@ export default function PdfFlipbook({ src, title }: { src: string; title: string
       } catch (e) {
         console.error(e);
         if (!cancelled) {
-          setError("Не удалось загрузить каталог");
+          setError(labels.error);
           setLoading(false);
         }
       }
@@ -65,7 +74,7 @@ export default function PdfFlipbook({ src, title }: { src: string; title: string
     return () => {
       cancelled = true;
     };
-  }, [src]);
+  }, [src, labels.error]);
 
   useEffect(() => {
     if (!pdf || !canvasRef.current || !containerRef.current) return;
@@ -114,7 +123,7 @@ export default function PdfFlipbook({ src, title }: { src: string; title: string
           setTouchStart(null);
         }}
       >
-        {loading && <div className="text-sm font-bold text-white/60">Загрузка каталога…</div>}
+        {loading && <div className="text-sm font-bold text-white/60">{labels.loading}</div>}
         {error && <div className="text-sm font-bold text-red-300">{error}</div>}
         {!loading && !error && (
           <canvas
@@ -126,17 +135,17 @@ export default function PdfFlipbook({ src, title }: { src: string; title: string
 
         {!loading && !error && (
           <>
-            <button type="button" onClick={previous} disabled={page <= 1} aria-label="Предыдущая страница" className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 px-4 py-3 text-2xl font-black text-white backdrop-blur disabled:opacity-20 md:left-5">‹</button>
-            <button type="button" onClick={next} disabled={page >= pages} aria-label="Следующая страница" className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 px-4 py-3 text-2xl font-black text-white backdrop-blur disabled:opacity-20 md:right-5">›</button>
+            <button type="button" onClick={previous} disabled={page <= 1} aria-label={labels.previous} className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 px-4 py-3 text-2xl font-black text-white backdrop-blur disabled:opacity-20 md:left-5">‹</button>
+            <button type="button" onClick={next} disabled={page >= pages} aria-label={labels.next} className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 px-4 py-3 text-2xl font-black text-white backdrop-blur disabled:opacity-20 md:right-5">›</button>
           </>
         )}
       </div>
 
       {!loading && !error && (
         <div className="mt-4 flex items-center justify-between gap-4 text-sm font-bold text-white/70">
-          <button type="button" onClick={previous} disabled={page <= 1} className="rounded-full border border-white/10 px-4 py-2 disabled:opacity-30">←</button>
+          <button type="button" onClick={previous} disabled={page <= 1} aria-label={labels.previous} className="rounded-full border border-white/10 px-4 py-2 disabled:opacity-30">←</button>
           <span>{page} / {pages}</span>
-          <button type="button" onClick={next} disabled={page >= pages} className="rounded-full border border-white/10 px-4 py-2 disabled:opacity-30">→</button>
+          <button type="button" onClick={next} disabled={page >= pages} aria-label={labels.next} className="rounded-full border border-white/10 px-4 py-2 disabled:opacity-30">→</button>
         </div>
       )}
     </div>
