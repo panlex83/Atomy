@@ -1,5 +1,12 @@
-export default function Reviews({ t }: any) {
-  const blobReview = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/-7392484812736012309.mp4";
+export default function Reviews({ t, locale }: any) {
+  const reviewVideo = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/-7392484812736012309.mp4";
+  const tracks = [
+    { code: "ru", label: "Русский" },
+    { code: "en", label: "English" },
+    { code: "kk", label: "Қазақша" },
+    { code: "uz", label: "O‘zbekcha" },
+    { code: "ky", label: "Кыргызча" },
+  ];
 
   return (
     <section id="reviews" className="relative overflow-hidden bg-[#15110b] px-5 py-20 text-white md:px-8">
@@ -27,7 +34,17 @@ export default function Reviews({ t }: any) {
 
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video src={blobReview} controls playsInline preload="metadata" className="h-full w-full object-contain">
+              <video src={reviewVideo} controls playsInline preload="metadata" className="h-full w-full object-contain">
+                {tracks.map((track) => (
+                  <track
+                    key={track.code}
+                    src={`/subtitles/hemohim-review-${track.code}.vtt`}
+                    kind="subtitles"
+                    srcLang={track.code}
+                    label={track.label}
+                    default={locale === track.code}
+                  />
+                ))}
                 {t.reviews.iframeTitle}
               </video>
             </div>
