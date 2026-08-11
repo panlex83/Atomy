@@ -22,7 +22,7 @@ export default function Catalog({ t }: any) {
           </a>
         </div>
 
-        <PdfFlipbook src={catalogUrl} title={t.catalog.title} />
+        <PdfFlipbook src={catalogUrl} title={t.catalog.title} locale={t.locale} />
       </div>
     </section>
   );
