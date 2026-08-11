@@ -1,4 +1,6 @@
 export default function VideoBlock({ t }: any) {
+  const historyVideo = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/-7392484812736012309.mp4";
+
   return (
     <section className="relative overflow-hidden bg-[#15110b] px-5 py-20 text-white md:px-8">
       <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-[#7a1f18]/35 blur-3xl" />
@@ -12,7 +14,7 @@ export default function VideoBlock({ t }: any) {
         <div className="grid items-stretch gap-8 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video src="/api/history-video" controls playsInline preload="metadata" className="h-full w-full object-contain">
+              <video src={historyVideo} controls playsInline preload="metadata" className="h-full w-full object-contain">
                 {t.video.iframeTitle}
               </video>
             </div>
