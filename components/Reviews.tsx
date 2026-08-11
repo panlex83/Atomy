@@ -1,4 +1,6 @@
 export default function Reviews({ t }: any) {
+  const blobReview = "https://jeg64lfwbq5bwnpf.public.blob.vercel-storage.com/-7392484812736012309.mp4";
+
   return (
     <section id="reviews" className="relative overflow-hidden bg-[#15110b] px-5 py-20 text-white md:px-8">
       <div className="absolute -left-24 top-16 h-72 w-72 rounded-full bg-[#7a1f18]/30 blur-3xl" />
@@ -25,7 +27,7 @@ export default function Reviews({ t }: any) {
 
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-black p-2 shadow-2xl shadow-black/35">
             <div className="aspect-video overflow-hidden rounded-[25px] bg-black">
-              <video src="/api/review-video" controls playsInline preload="metadata" className="h-full w-full object-contain">
+              <video src={blobReview} controls playsInline preload="metadata" className="h-full w-full object-contain">
                 {t.reviews.iframeTitle}
               </video>
             </div>
