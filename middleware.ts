@@ -19,8 +19,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  const hostname = request.headers.get("host")?.split(":")[0].toLowerCase();
+  const locale =
+    hostname === "hemohim.kg" || hostname === "www.hemohim.kg"
+      ? "ky"
+      : defaultLocale;
+
   const url = request.nextUrl.clone();
-  url.pathname = `/${defaultLocale}${pathname === "/" ? "" : pathname}`;
+  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
   return NextResponse.redirect(url);
 }
 
