@@ -27,6 +27,8 @@ export function middleware(request: NextRequest) {
     locale = "ky";
   } else if (hostname === "hemohim.uz" || hostname === "www.hemohim.uz") {
     locale = "uz";
+  } else if (hostname === "hemohim.be" || hostname === "www.hemohim.be") {
+    locale = "en";
   }
 
   const url = request.nextUrl.clone();
