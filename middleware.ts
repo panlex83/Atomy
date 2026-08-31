@@ -20,10 +20,14 @@ export function middleware(request: NextRequest) {
   }
 
   const hostname = request.headers.get("host")?.split(":")[0].toLowerCase();
-  const locale =
-    hostname === "hemohim.kg" || hostname === "www.hemohim.kg"
-      ? "ky"
-      : defaultLocale;
+
+  let locale = defaultLocale;
+
+  if (hostname === "hemohim.kg" || hostname === "www.hemohim.kg") {
+    locale = "ky";
+  } else if (hostname === "hemohim.uz" || hostname === "www.hemohim.uz") {
+    locale = "uz";
+  }
 
   const url = request.nextUrl.clone();
   url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
